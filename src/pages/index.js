@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/navbar";
 import Main from "@/components/main";
 import { Box, VStack } from "@chakra-ui/react";
+import About from "@/components/about";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function Home() {
         >
           <Navbar />
           <Main />
+          <About />
         </Box>
       </VStack>
     </>
