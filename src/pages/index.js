@@ -1,9 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
 import Navbar from "@/components/navbar";
 import Main from "@/components/main";
+import { Box, VStack } from "@chakra-ui/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,10 +16,17 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <Navbar />
-        <Main />
-      </main>
+      <VStack>
+        <Box
+          bgColor={"black"}
+          p={["4", "8", "16"]}
+          minH={"100vh"}
+          w={["100%", "90%", "70%"]}
+        >
+          <Navbar />
+          <Main />
+        </Box>
+      </VStack>
     </>
   );
 }
