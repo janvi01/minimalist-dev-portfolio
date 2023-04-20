@@ -5,8 +5,20 @@ import { BiSun } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <HStack bgColor={"black"} justify="flex-end" spacing="8" color={"white"}>
-      <Link href="#">home</Link>
+    <HStack
+      bgColor={"black"}
+      justify="flex-end"
+      spacing="8"
+      color={"whiteAlpha.700"}
+    >
+      <Link
+        href="#"
+        _hover={{
+          color: "white",
+        }}
+      >
+        home
+      </Link>
       <Link href="#">projects</Link>
       <Link href="#">blog</Link>
       <IconButton

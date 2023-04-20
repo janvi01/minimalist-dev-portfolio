@@ -5,6 +5,7 @@ import Navbar from "@/components/navbar";
 import Main from "@/components/main";
 import { Box, VStack } from "@chakra-ui/react";
 import About from "@/components/about";
+import Experience from "@/components/experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function Home() {
           <Navbar />
           <Main />
           <About />
+          <Experience />
         </Box>
       </VStack>
     </>

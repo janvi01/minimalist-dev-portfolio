@@ -1,4 +1,4 @@
-import { Flex, Heading, Spacer, Text, VStack } from "@chakra-ui/react";
+import { Flex, Heading, Text } from "@chakra-ui/react";
 
 function About() {
   return (
@@ -10,7 +10,7 @@ function About() {
       color={"white"}
     >
       <Heading size={"lg"} mb="4">
-        about.
+        about ✨
       </Heading>
       <Text>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
