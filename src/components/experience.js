@@ -1,4 +1,5 @@
 import {
+  Box,
   Flex,
   Heading,
   HStack,
@@ -6,6 +7,7 @@ import {
   Text,
   UnorderedList,
 } from "@chakra-ui/react";
+import { experienceData } from "@/data/experienceData";
 
 function Experience() {
   return (
@@ -19,20 +21,25 @@ function Experience() {
       <Heading size={"lg"} mb="4">
         experience ✨
       </Heading>
-      <HStack justify={"space-between"} fontSize="2xl" mb="2">
-        <Text>position, company Name</Text>
-        <Text>starting - ending date</Text>
-      </HStack>
-      <UnorderedList>
-        <ListItem>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod et dolore magna
-        </ListItem>
-        <ListItem>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod et dolore magna
-        </ListItem>
-      </UnorderedList>
+      {experienceData.map((items, key) => {
+        return (
+          <Box mb="8">
+            <HStack justify={"space-between"} fontSize="2xl" mb="2">
+              <Text>
+                {items.company}, <i>{items.position}</i>
+              </Text>
+              <Text fontStyle={"italic"} fontSize="xl">
+                {items.startingDate} - {items.endingDate}
+              </Text>
+            </HStack>
+            <UnorderedList>
+              {items.description.map((itemmslist, key) => {
+                return <ListItem>{itemmslist}</ListItem>;
+              })}
+            </UnorderedList>
+          </Box>
+        );
+      })}
     </Flex>
   );
 }

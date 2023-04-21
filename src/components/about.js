@@ -13,13 +13,14 @@ function About() {
         about ✨
       </Heading>
       <Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+        I am a software engineer with a focus on front-end engineering and
+        problem solving. I possess a strong ability to communicate and ability
+        to express ideas clearly and concisely. <br />
+        <br />I specialized in Frontend-development, Technical Writing, and
+        Creative Design. I am an Open-source enthusiast with experience of
+        participating in various open-source programs like Outreachy, GSSoC,
+        Hacktoberfest, etc. and contributing to well-known Free Open Source
+        Software.
       </Text>
     </Flex>
   );
