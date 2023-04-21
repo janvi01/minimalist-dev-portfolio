@@ -32,7 +32,7 @@ function Experience() {
                 {items.startingDate} - {items.endingDate}
               </Text>
             </HStack>
-            <UnorderedList>
+            <UnorderedList color={"whiteAlpha.800"}>
               {items.description.map((itemmslist, key) => {
                 return <ListItem>{itemmslist}</ListItem>;
               })}

@@ -1,5 +1,5 @@
-import { HStack } from "@chakra-ui/react";
-import Link from "next/link";
+import { navData } from "@/data/navData";
+import { HStack, Link } from "@chakra-ui/react";
 import { IconButton } from "@chakra-ui/react";
 import { BiSun } from "react-icons/bi";
 
@@ -11,16 +11,19 @@ function Navbar() {
       spacing="8"
       color={"whiteAlpha.700"}
     >
-      <Link
-        href="#"
-        _hover={{
-          color: "white",
-        }}
-      >
-        home
-      </Link>
-      <Link href="#">projects</Link>
-      <Link href="#">blog</Link>
+      {navData.map((items, key) => {
+        return (
+          <Link
+            href="#"
+            key={key}
+            _hover={{
+              color: "white",
+            }}
+          >
+            {items.navItem}
+          </Link>
+        );
+      })}
       <IconButton
         aria-label="Mode Change"
         variant="outline"

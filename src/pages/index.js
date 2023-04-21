@@ -6,6 +6,7 @@ import Main from "@/components/main";
 import { Box, VStack } from "@chakra-ui/react";
 import About from "@/components/about";
 import Experience from "@/components/experience";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <VStack>
+      <VStack bgColor={"black"}>
         <Box
           bgColor={"black"}
           p={["4", "8", "16"]}
@@ -29,6 +30,7 @@ export default function Home() {
           <Main />
           <About />
           <Experience />
+          <Footer />
         </Box>
       </VStack>
     </>
