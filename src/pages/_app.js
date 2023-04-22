@@ -1,10 +1,23 @@
 // pages/_app.js
-import { ChakraProvider } from "@chakra-ui/react";
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
+import { ChakraProvider, Box, VStack } from "@chakra-ui/react";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider>
-      <Component {...pageProps} />
+      <VStack bgColor={"black"}>
+        <Box
+          bgColor={"black"}
+          p={["4", "8", "16"]}
+          minH={"100vh"}
+          w={["100%", "90%", "70%"]}
+        >
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </Box>
+      </VStack>
     </ChakraProvider>
   );
 }

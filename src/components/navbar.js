@@ -14,7 +14,7 @@ function Navbar() {
       {navData.map((items, key) => {
         return (
           <Link
-            href="#"
+            href={items.url}
             key={key}
             _hover={{
               color: "white",

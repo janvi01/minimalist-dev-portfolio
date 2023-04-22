@@ -1,12 +1,9 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/navbar";
 import Main from "@/components/main";
-import { Box, VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import About from "@/components/about";
 import Experience from "@/components/experience";
-import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,20 +16,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <VStack bgColor={"black"}>
-        <Box
-          bgColor={"black"}
-          p={["4", "8", "16"]}
-          minH={"100vh"}
-          w={["100%", "90%", "70%"]}
-        >
-          <Navbar />
-          <Main />
-          <About />
-          <Experience />
-          <Footer />
-        </Box>
-      </VStack>
+      <Box minHeight={"70vh"}>
+        <Main />
+        <About />
+        <Experience />
+      </Box>
     </>
   );
 }
