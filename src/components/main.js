@@ -4,7 +4,6 @@ function Main() {
   return (
     <Stack
       direction={["column", "row"]}
-      bgColor={"black"}
       m="8"
       justify="flex-start"
       spacing="8"

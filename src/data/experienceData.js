@@ -5,7 +5,7 @@ export const experienceData = [
     startingDate: "Feb 2022",
     endingDate: "present",
     description: [
-      "Merged 15+ patches to Mozilla source code working on the products - Firefox browser i.e. Picture-in-Picture, adds on, documentation etc. that is live in Firefox, Firefox Beta, and Nightly Browser used by 100+ million users.",
+      "Merged 20+ patches to Mozilla source code working on the products - Firefox browser i.e. Picture-in-Picture, adds on, documentation etc. that is live in Firefox, Firefox Beta, and Nightly Browser used by 100+ million users.",
     ],
   },
   {

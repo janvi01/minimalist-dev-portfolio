@@ -2,13 +2,7 @@ import { Flex, Heading, Text } from "@chakra-ui/react";
 
 function About() {
   return (
-    <Flex
-      direction={"column"}
-      bgColor={"black"}
-      m="8"
-      justifyContent={"left"}
-      color={"white"}
-    >
+    <Flex direction={"column"} m="8" justifyContent={"left"} color={"white"}>
       <Heading size={"lg"} mb="4">
         about ✨
       </Heading>

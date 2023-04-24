@@ -5,12 +5,7 @@ import { BiSun } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <HStack
-      bgColor={"black"}
-      justify="flex-end"
-      spacing="8"
-      color={"whiteAlpha.700"}
-    >
+    <HStack justify="flex-end" spacing="8" color={"whiteAlpha.700"}>
       {navData.map((items, key) => {
         return (
           <Link

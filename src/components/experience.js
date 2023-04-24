@@ -11,13 +11,7 @@ import { experienceData } from "@/data/experienceData";
 
 function Experience() {
   return (
-    <Flex
-      direction={"column"}
-      bgColor={"black"}
-      m="8"
-      justifyContent={"left"}
-      color={"white"}
-    >
+    <Flex direction={"column"} m="8" justifyContent={"left"} color={"white"}>
       <Heading size={"lg"} mb="4">
         experience ✨
       </Heading>
