@@ -5,7 +5,7 @@ import { BiSun } from "react-icons/bi";
 
 function Navbar() {
   return (
-    <HStack justify="flex-end" spacing="8" color={"whiteAlpha.700"}>
+    <HStack justify="flex-end" spacing="8" color={"whiteAlpha.700"} bgGradient={"linear-gradient(147deg, #000000 0%, #2c3e50 84%)"} fontSize="lg" p={2} borderRadius={"25px"}>
       {navData.map((items, key) => {
         return (
           <Link
@@ -23,7 +23,8 @@ function Navbar() {
         aria-label="Mode Change"
         variant="outline"
         colorScheme="black"
-        size="lg"
+        size="md" 
+        borderRadius={"25px"}
         icon={<BiSun />}
       />
     </HStack>
