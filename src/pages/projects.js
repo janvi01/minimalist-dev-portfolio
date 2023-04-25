@@ -1,4 +1,5 @@
 import { projectsData } from "@/data/projectsData";
+import styles from "../styles/Home.module.css";
 import {
   Stack,
   Text,
@@ -13,7 +14,7 @@ import { BsGithub, BsArrowUpRight } from "react-icons/bs";
 
 function Projects() {
   return (
-    <>
+    <Box minHeight={"70vh"}>
       <Heading as={"h1"} size="2xl" textAlign={"center"} m={"8"} color="white">
         projects 🚀
       </Heading>
@@ -21,10 +22,10 @@ function Projects() {
         {projectsData.map((items, key) => {
           return (
             <Box
+              className={styles.projectsCard}
               maxW={"445px"}
               w={"full"}
               bg={useColorModeValue("white", "gray.900")}
-              boxShadow={"2xl"}
               rounded={"md"}
               p={6}
               m={6}
@@ -75,7 +76,7 @@ function Projects() {
           );
         })}
       </Flex>
-    </>
+    </Box>
   );
 }
 
