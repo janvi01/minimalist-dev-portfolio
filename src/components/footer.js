@@ -1,7 +1,5 @@
 import { socialsData } from "@/data/socialsData";
-import { HStack, Link } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/react";
-import { BiSun } from "react-icons/bi";
+import { HStack, Icon, Link } from "@chakra-ui/react";
 
 function Footer() {
   return (
@@ -15,15 +13,22 @@ function Footer() {
     >
       {socialsData.map((items, key) => {
         return (
-          <Link
-            href={items.url}
+          <HStack
             key={key}
             _hover={{
               color: "white",
             }}
           >
-            {items.social}
-          </Link>
+            <Link
+              href={items.url}
+              _hover={{
+                color: "white",
+              }}
+            >
+              {items.social}
+            </Link>
+            <Icon as={items.icon} />
+          </HStack>
         );
       })}
     </HStack>
