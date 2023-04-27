@@ -1,5 +1,6 @@
 import { socialsData } from "@/data/socialsData";
 import { HStack, Icon, Link } from "@chakra-ui/react";
+import { AttentionSeeker } from "react-awesome-reveal";
 
 function Footer() {
   return (
@@ -11,26 +12,28 @@ function Footer() {
       p={2}
       borderRadius={"25px"}
     >
-      {socialsData.map((items, key) => {
-        return (
-          <HStack
-            key={key}
-            _hover={{
-              color: "white",
-            }}
-          >
-            <Link
-              href={items.url}
+      <AttentionSeeker effect="flash" duration={7000}>
+        {socialsData.map((items, key) => {
+          return (
+            <HStack
+              key={key}
               _hover={{
                 color: "white",
               }}
             >
-              {items.social}
-            </Link>
-            <Icon as={items.icon} />
-          </HStack>
-        );
-      })}
+              <Link
+                href={items.url}
+                _hover={{
+                  color: "white",
+                }}
+              >
+                {items.social}
+              </Link>
+              <Icon as={items.icon} />
+            </HStack>
+          );
+        })}
+      </AttentionSeeker>
     </HStack>
   );
 }

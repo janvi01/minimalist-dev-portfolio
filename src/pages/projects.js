@@ -19,20 +19,20 @@ function Projects() {
       <Heading as={"h1"} size="2xl" textAlign={"center"} m={"8"} color="white">
         projects 🚀
       </Heading>
-      <Flex direction={["column", "row"]} wrap="wrap">
-        {projectsData.map((items, key) => {
-          return (
-            <Box
-              className={styles.projectsCard}
-              maxW={"445px"}
-              w={"full"}
-              bg={useColorModeValue("white", "gray.900")}
-              rounded={"md"}
-              p={6}
-              m={6}
-              overflow={"hidden"}
-            >
-              <Fade delay={1e3} cascade damping={1e-1}>
+      <Fade delay={1e3} cascade damping={1e-1}>
+        <Flex direction={["column", "row"]} wrap="wrap">
+          {projectsData.map((items, key) => {
+            return (
+              <Box
+                className={styles.projectsCard}
+                maxW={"445px"}
+                w={"full"}
+                bg={useColorModeValue("white", "gray.900")}
+                rounded={"md"}
+                p={6}
+                m={6}
+                overflow={"hidden"}
+              >
                 <Stack direction={"row"} justifyContent="space-between" mb="2">
                   <Heading
                     color={useColorModeValue("gray.700", "white")}
@@ -74,11 +74,11 @@ function Projects() {
                     );
                   })}
                 </Stack>
-              </Fade>
-            </Box>
-          );
-        })}
-      </Flex>
+              </Box>
+            );
+          })}
+        </Flex>
+      </Fade>
     </Box>
   );
 }
