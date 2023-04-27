@@ -11,6 +11,7 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { BsGithub, BsArrowUpRight } from "react-icons/bs";
+import { Fade } from "react-awesome-reveal";
 
 function Projects() {
   return (
@@ -31,47 +32,49 @@ function Projects() {
               m={6}
               overflow={"hidden"}
             >
-              <Stack direction={"row"} justifyContent="space-between" mb="2">
-                <Heading
-                  color={useColorModeValue("gray.700", "white")}
-                  fontSize={"2xl"}
-                  fontFamily={"body"}
-                >
-                  {items.projectname}
-                </Heading>
-                <HStack>
-                  <IconButton
-                    aria-label="Mode Change"
-                    variant="outline"
-                    colorScheme="black"
-                    size={"sm"}
-                    icon={<BsGithub />}
-                  />
-                  <IconButton
-                    aria-label="Mode Change"
-                    variant="outline"
-                    colorScheme="black"
-                    size={"sm"}
-                    icon={<BsArrowUpRight />}
-                  />
-                </HStack>
-              </Stack>
-              <Text color={"gray.500"}>{items.description}</Text>
-              <Stack mt={4} direction={"row"} spacing={4} align={"center"}>
-                {items.techstack.map((data, key) => {
-                  return (
-                    <Text
-                      color={"green.500"}
-                      textTransform={"uppercase"}
-                      fontWeight={800}
-                      fontSize={"sm"}
-                      letterSpacing={1.1}
-                    >
-                      {data}
-                    </Text>
-                  );
-                })}
-              </Stack>
+              <Fade delay={1e3} cascade damping={1e-1}>
+                <Stack direction={"row"} justifyContent="space-between" mb="2">
+                  <Heading
+                    color={useColorModeValue("gray.700", "white")}
+                    fontSize={"2xl"}
+                    fontFamily={"body"}
+                  >
+                    {items.projectname}
+                  </Heading>
+                  <HStack>
+                    <IconButton
+                      aria-label="Mode Change"
+                      variant="outline"
+                      colorScheme="black"
+                      size={"sm"}
+                      icon={<BsGithub />}
+                    />
+                    <IconButton
+                      aria-label="Mode Change"
+                      variant="outline"
+                      colorScheme="black"
+                      size={"sm"}
+                      icon={<BsArrowUpRight />}
+                    />
+                  </HStack>
+                </Stack>
+                <Text color={"gray.500"}>{items.description}</Text>
+                <Stack mt={4} direction={"row"} spacing={4} align={"center"}>
+                  {items.techstack.map((data, key) => {
+                    return (
+                      <Text
+                        color={"green.500"}
+                        textTransform={"uppercase"}
+                        fontWeight={800}
+                        fontSize={"sm"}
+                        letterSpacing={1.1}
+                      >
+                        {data}
+                      </Text>
+                    );
+                  })}
+                </Stack>
+              </Fade>
             </Box>
           );
         })}
