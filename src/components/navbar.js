@@ -1,11 +1,20 @@
 import { navData } from "@/data/navData";
 import { HStack, Link } from "@chakra-ui/react";
-import { IconButton } from "@chakra-ui/react";
-import { BiSun } from "react-icons/bi";
+import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
+import { BsSun, BsMoon } from "react-icons/bs";
 
 function Navbar() {
+  const { toggleColorMode } = useColorMode();
   return (
-    <HStack justify="flex-end" spacing="8" color={"whiteAlpha.700"} bgGradient={"linear-gradient(147deg, #000000 0%, #2c3e50 84%)"} fontSize="lg" p={2} borderRadius={"25px"}>
+    <HStack
+      justify="flex-end"
+      spacing="8"
+      color={"whiteAlpha.700"}
+      bgGradient={"linear-gradient(147deg, #000000 0%, #2c3e50 84%)"}
+      fontSize="lg"
+      p={2}
+      borderRadius={"25px"}
+    >
       {navData.map((items, key) => {
         return (
           <Link
@@ -23,9 +32,10 @@ function Navbar() {
         aria-label="Mode Change"
         variant="outline"
         colorScheme="black"
-        size="md" 
+        size="md"
         borderRadius={"25px"}
-        icon={<BiSun />}
+        icon={useColorModeValue(<BsMoon />, <BsSun />)}
+        onClick={toggleColorMode}
       />
     </HStack>
   );
