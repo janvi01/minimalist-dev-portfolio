@@ -11,14 +11,22 @@ import {
   Flex,
 } from "@chakra-ui/react";
 import { BsGithub, BsArrowUpRight } from "react-icons/bs";
-import { Fade } from "react-awesome-reveal";
+import { AttentionSeeker, Fade } from "react-awesome-reveal";
 
 function Projects() {
   return (
     <Box minHeight={"70vh"}>
-      <Heading as={"h1"} size="2xl" textAlign={"center"} m={"8"} color="white">
-        projects 🚀
-      </Heading>
+      <AttentionSeeker effect="bounce">
+        <Heading
+          as={"h1"}
+          size="2xl"
+          textAlign={"center"}
+          m={"8"}
+          color="white"
+        >
+          projects 🚀
+        </Heading>
+      </AttentionSeeker>
       <Fade delay={1e3} cascade damping={1e-1}>
         <Flex direction={["column", "row"]} wrap="wrap">
           {projectsData.map((items, key) => {

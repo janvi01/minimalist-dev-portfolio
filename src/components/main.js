@@ -18,13 +18,18 @@ function Main() {
       <VStack>
         <AttentionSeeker effect="pulse">
           <Heading as={"h1"} size="2xl">
-            hi there 👋🏻, I am Janvi 🌻
+            hey there , I am Janvi 🌻
           </Heading>
           <Heading as={"h6"} size="md">
             a passionate frontend developer and an open sourcerer
           </Heading>
         </AttentionSeeker>
       </VStack>
+      <AttentionSeeker effect="tada" delay={1000} duration={3000}>
+        <Heading as={"h1"} size="4xl">
+          👋🏻
+        </Heading>
+      </AttentionSeeker>
     </Stack>
   );
 }
