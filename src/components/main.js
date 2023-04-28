@@ -1,4 +1,10 @@
-import { Heading, Stack, Image, VStack } from "@chakra-ui/react";
+import {
+  Heading,
+  Stack,
+  Image,
+  VStack,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import { AttentionSeeker } from "react-awesome-reveal";
 
 function Main() {
@@ -8,7 +14,7 @@ function Main() {
       m="8"
       justify="flex-start"
       spacing="8"
-      color={"white"}
+      color={useColorModeValue("black", "white")}
     >
       <Image
         boxSize={"20"}

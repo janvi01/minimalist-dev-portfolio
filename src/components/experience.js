@@ -6,13 +6,19 @@ import {
   ListItem,
   Text,
   UnorderedList,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { experienceData } from "@/data/experienceData";
 import { Fade } from "react-awesome-reveal";
 
 function Experience() {
   return (
-    <Flex direction={"column"} m="8" justifyContent={"left"} color={"white"}>
+    <Flex
+      direction={"column"}
+      m="8"
+      justifyContent={"left"}
+      color={useColorModeValue("black", "white")}
+    >
       <Fade delay={1e3} cascade damping={1e-1}>
         <Heading size={"lg"} mb="4">
           experience ✨
@@ -28,7 +34,9 @@ function Experience() {
                   {items.startingDate} - {items.endingDate}
                 </Text>
               </HStack>
-              <UnorderedList color={"whiteAlpha.800"}>
+              <UnorderedList
+                color={useColorModeValue("blackAlpha.800", "whiteAlpha.800")}
+              >
                 {items.description.map((itemmslist, key) => {
                   return <ListItem>{itemmslist}</ListItem>;
                 })}

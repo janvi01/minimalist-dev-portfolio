@@ -17,7 +17,7 @@ const theme = extendTheme({
     global: (props) => ({
       body: {
         background: mode(
-          "linear-gradient(147deg, #FFFFFF 0%, #FFFFFF 50%, #2c3e50 84%)",
+          "linear-gradient(147deg, #2c3e50 0%, #2c3e50 10%, #FFFFFF 50%, #FFFFFF 84%)",
           "linear-gradient(147deg, #000000 0%, #000000 50%, #2c3e50 84%)"
         )(props),
       },

@@ -1,5 +1,5 @@
 import { navData } from "@/data/navData";
-import { HStack, Link } from "@chakra-ui/react";
+import { Button, Heading, HStack, Link, Spacer } from "@chakra-ui/react";
 import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { BsSun, BsMoon } from "react-icons/bs";
 
@@ -9,12 +9,23 @@ function Navbar() {
     <HStack
       justify="flex-end"
       spacing="8"
-      color={"whiteAlpha.700"}
-      bgGradient={"linear-gradient(147deg, #000000 0%, #2c3e50 84%)"}
+      color={"white"}
+      bgGradient={useColorModeValue(
+        "linear-gradient(147deg, #000000 0%, #2c3e50 84%)",
+        "linear-gradient(147deg, #FFFFFF 0%, #2c3e50 84%)"
+      )}
       fontSize="lg"
-      p={2}
+      px={6}
+      py={2}
+      boxShadow={
+        "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px"
+      }
       borderRadius={"25px"}
     >
+      <Link href="\">
+        <Heading>👩‍💻</Heading>
+      </Link>
+      <Spacer />
       {navData.map((items, key) => {
         return (
           <Link

@@ -1,5 +1,5 @@
 import { socialsData } from "@/data/socialsData";
-import { HStack, Icon, Link } from "@chakra-ui/react";
+import { HStack, Icon, Link, useColorModeValue } from "@chakra-ui/react";
 import { AttentionSeeker } from "react-awesome-reveal";
 
 function Footer() {
@@ -7,7 +7,7 @@ function Footer() {
     <HStack
       justify="flex-start"
       spacing="8"
-      color={"whiteAlpha.700"}
+      color={useColorModeValue("blackAlpha.700", "whiteAlpha.700")}
       fontSize="lg"
       p={2}
       borderRadius={"25px"}
@@ -24,7 +24,7 @@ function Footer() {
               <Link
                 href={items.url}
                 _hover={{
-                  color: "white",
+                  color: useColorModeValue("black", "white"),
                 }}
               >
                 {items.social}
