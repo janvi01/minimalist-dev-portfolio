@@ -18,7 +18,7 @@ function Footer() {
             <HStack
               key={key}
               _hover={{
-                color: "white",
+                color: useColorModeValue("black", "white"),
               }}
             >
               <Link

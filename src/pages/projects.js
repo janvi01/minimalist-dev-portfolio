@@ -32,11 +32,13 @@ function Projects() {
           {projectsData.map((items, key) => {
             return (
               <Box
-                className={styles.projectsCard}
                 maxW={"445px"}
                 w={"full"}
                 bg={useColorModeValue("white", "gray.900")}
                 rounded={"md"}
+                boxShadow={
+                  "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"
+                }
                 p={6}
                 m={6}
                 overflow={"hidden"}
