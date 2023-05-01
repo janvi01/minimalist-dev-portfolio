@@ -1,3 +1,4 @@
+import { greetings } from "@/data/homeData";
 import {
   Heading,
   Stack,
@@ -24,10 +25,10 @@ function Main() {
       <VStack>
         <AttentionSeeker effect="pulse">
           <Heading as={"h1"} size="2xl">
-            hey there , I am Janvi 🌻
+            {greetings.title}
           </Heading>
           <Heading as={"h6"} size="md">
-            a passionate frontend developer and an open sourcerer
+            {greetings.subtitle}
           </Heading>
         </AttentionSeeker>
       </VStack>
