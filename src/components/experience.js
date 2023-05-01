@@ -25,7 +25,7 @@ function Experience() {
         </Heading>
         {experienceData.map((items, key) => {
           return (
-            <Box mb="8">
+            <Box mb="8" key={key}>
               <HStack justify={"space-between"} fontSize="2xl" mb="2">
                 <Text>
                   {items.company}, <i>{items.position}</i>
@@ -38,7 +38,7 @@ function Experience() {
                 color={useColorModeValue("blackAlpha.800", "whiteAlpha.800")}
               >
                 {items.description.map((itemmslist, key) => {
-                  return <ListItem>{itemmslist}</ListItem>;
+                  return <ListItem key={key}>{itemmslist}</ListItem>;
                 })}
               </UnorderedList>
             </Box>

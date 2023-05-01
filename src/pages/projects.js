@@ -32,6 +32,7 @@ function Projects() {
           {projectsData.map((items, key) => {
             return (
               <Box
+                key={key}
                 maxW={"445px"}
                 w={"full"}
                 bg={useColorModeValue("white", "gray.900")}
@@ -73,6 +74,7 @@ function Projects() {
                   {items.techstack.map((data, key) => {
                     return (
                       <Text
+                        key={key}
                         color={"green.500"}
                         textTransform={"uppercase"}
                         fontWeight={800}
