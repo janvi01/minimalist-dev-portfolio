@@ -1,6 +1,8 @@
 # Minimalist Developer Portfolio 🚀
 
-##
+## A lightweight, customizable and open-sourced minimalist developer personal portfolio built with Next.js.
+
+### readme loading soon...
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
