@@ -14,6 +14,8 @@ import { BsGithub, BsArrowUpRight } from "react-icons/bs";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
 
 function Projects() {
+  const cardcolor = useColorModeValue("white", "gray.900");
+  const namecolor = useColorModeValue("gray.700", "white");
   return (
     <Box minHeight={"70vh"}>
       <AttentionSeeker effect="bounce">
@@ -35,7 +37,7 @@ function Projects() {
                 key={key}
                 maxW={"445px"}
                 w={"full"}
-                bg={useColorModeValue("white", "gray.900")}
+                bg={cardcolor}
                 rounded={"md"}
                 boxShadow={
                   "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"
@@ -46,7 +48,7 @@ function Projects() {
               >
                 <Stack direction={"row"} justifyContent="space-between" mb="2">
                   <Heading
-                    color={useColorModeValue("gray.700", "white")}
+                    color={namecolor}
                     fontSize={"2xl"}
                     fontFamily={"body"}
                   >

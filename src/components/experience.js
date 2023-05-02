@@ -12,6 +12,7 @@ import { experienceData } from "@/data/experienceData";
 import { Fade } from "react-awesome-reveal";
 
 function Experience() {
+  const ulcolor = useColorModeValue("blackAlpha.800", "whiteAlpha.800");
   return (
     <Flex
       direction={"column"}
@@ -34,9 +35,7 @@ function Experience() {
                   {items.startingDate} - {items.endingDate}
                 </Text>
               </HStack>
-              <UnorderedList
-                color={useColorModeValue("blackAlpha.800", "whiteAlpha.800")}
-              >
+              <UnorderedList color={ulcolor}>
                 {items.description.map((itemmslist, key) => {
                   return <ListItem key={key}>{itemmslist}</ListItem>;
                 })}

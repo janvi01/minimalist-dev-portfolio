@@ -3,6 +3,7 @@ import { HStack, Icon, Link, useColorModeValue } from "@chakra-ui/react";
 import { AttentionSeeker } from "react-awesome-reveal";
 
 function Footer() {
+  const hovercolor = useColorModeValue("black", "white");
   return (
     <HStack
       justify="flex-start"
@@ -18,13 +19,13 @@ function Footer() {
             <HStack
               key={key}
               _hover={{
-                color: useColorModeValue("black", "white"),
+                color: hovercolor,
               }}
             >
               <Link
                 href={items.url}
                 _hover={{
-                  color: useColorModeValue("black", "white"),
+                  color: hovercolor,
                 }}
               >
                 {items.social}
