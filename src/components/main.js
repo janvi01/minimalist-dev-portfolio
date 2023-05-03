@@ -12,9 +12,10 @@ function Main() {
   return (
     <Stack
       direction={["column", "row"]}
-      m="8"
+      m={["4", "8"]}
       justify="flex-start"
       spacing="8"
+      textAlign={"center"}
       color={useColorModeValue("black", "white")}
     >
       <Image
@@ -25,7 +26,7 @@ function Main() {
       ></Image>
       <VStack>
         <AttentionSeeker effect="pulse">
-          <Heading as={"h1"} size="2xl">
+          <Heading as={"h1"} size="3xl" lineHeight={"shorter"}>
             {greetings.title}
           </Heading>
           <Heading as={"h6"} size="md">

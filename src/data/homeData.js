@@ -1,6 +1,6 @@
 const greetings = {
-  title: "hey there , I am Janvi 🌻",
-  subtitle: "a passionate frontend developer and an open sourcerer",
+  title: "hi there, I am Janvi 🌻",
+  subtitle: "a passionate frontend developer and an open sourcerer ⭐",
 };
 
 const about = {

@@ -16,12 +16,12 @@ function Experience() {
   return (
     <Flex
       direction={"column"}
-      m="8"
+      m={["4", "8"]}
       justifyContent={"left"}
       color={useColorModeValue("black", "white")}
     >
       <Fade delay={1e3} cascade damping={1e-1}>
-        <Heading size={"lg"} mb="4">
+        <Heading size={"xl"} mb="4">
           experience ✨
         </Heading>
         {experienceData.map((items, key) => {

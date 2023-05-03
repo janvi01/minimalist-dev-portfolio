@@ -6,12 +6,13 @@ function Footer() {
   const hovercolor = useColorModeValue("black", "white");
   return (
     <HStack
-      justify="flex-start"
+      justify="center"
       spacing="8"
       color={useColorModeValue("blackAlpha.700", "whiteAlpha.700")}
       fontSize="lg"
       p={2}
       borderRadius={"25px"}
+      wrap="wrap"
     >
       <AttentionSeeker effect="flash" duration={7000}>
         {socialsData.map((items, key) => {

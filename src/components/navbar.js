@@ -22,7 +22,7 @@ function Navbar() {
       }
       borderRadius={"25px"}
     >
-      <Link href="\">
+      <Link href="\" display={["none", "block"]}>
         <Heading>👩‍💻</Heading>
       </Link>
       <Spacer />
