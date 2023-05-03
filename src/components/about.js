@@ -6,7 +6,9 @@ function About() {
   return (
     <Flex
       direction={"column"}
-      m={["4", "8"]}
+      ml={["4", "8"]}
+      mr={["4", "8"]}
+      mb="12"
       justifyContent={"left"}
       color={useColorModeValue("black", "white")}
     >
