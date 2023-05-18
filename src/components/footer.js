@@ -25,6 +25,7 @@ function Footer() {
             >
               <Link
                 href={items.url}
+                target="_blank"
                 _hover={{
                   color: hovercolor,
                 }}

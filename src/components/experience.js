@@ -38,7 +38,7 @@ function Experience() {
                   <Text fontStyle={"italic"} fontSize="xl">
                     {items.position}
                   </Text>
-                  <Link href={items.refLink}>
+                  <Link href={items.refLink} target="_blank">
                     <IconButton
                       aria-label="reference"
                       size={"sm"}

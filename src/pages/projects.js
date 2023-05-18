@@ -11,6 +11,7 @@ import {
 } from "@chakra-ui/react";
 import { BsGithub, BsArrowUpRight } from "react-icons/bs";
 import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import NextLink from "next/link";
 
 function Projects() {
   const cardcolor = useColorModeValue("white", "gray.900");
@@ -55,6 +56,9 @@ function Projects() {
                   </Heading>
                   <HStack>
                     <IconButton
+                      as={NextLink}
+                      href={items.githuburl}
+                      target="_blank"
                       aria-label="Mode Change"
                       variant="outline"
                       colorScheme="black"
@@ -62,6 +66,9 @@ function Projects() {
                       icon={<BsGithub />}
                     />
                     <IconButton
+                      as={NextLink}
+                      href={items.liveurl}
+                      target="_blank"
                       aria-label="Mode Change"
                       variant="outline"
                       colorScheme="black"
