@@ -16,7 +16,7 @@ export const experienceData = [
     endingDate: "Sept 2022",
     description: [
       "Selected as one of the outreachy interns from a pool of 3500+ applicants worldwide working on the project Firefox Picture-in-Picture Improvements.",
-      "Added new controls, subtitle support for various sites, wrote unit tests and fix misc bugs to Picture-in-Picture.",
+      "Added new controls, subtitle support for various sites like Hotstar, SonyLiv etc., wrote unit tests and fix misc bugs to Picture-in-Picture.",
     ],
     refLink: "https://bugzilla.mozilla.org/show_bug.cgi?id=1778801",
   },

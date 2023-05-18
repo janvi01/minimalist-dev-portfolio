@@ -2,6 +2,7 @@ import {
   Box,
   Flex,
   Heading,
+  Stack,
   HStack,
   ListItem,
   Text,
@@ -30,12 +31,17 @@ function Experience() {
         {experienceData.map((items, key) => {
           return (
             <Box mb="8" key={key}>
-              <HStack justify={"space-between"} fontSize="2xl" mb="2">
+              <Stack
+                direction={["column", "row"]}
+                justify={"space-between"}
+                fontSize="2xl"
+                mb="2"
+              >
                 <HStack>
-                  <Text fontWeight={"bold"} fontSize="2xl">
+                  <Text fontWeight={"bold"} fontSize={["xl", "2xl"]}>
                     {items.company},
                   </Text>
-                  <Text fontStyle={"italic"} fontSize="xl">
+                  <Text fontStyle={"italic"} fontSize={["lg", "xl"]}>
                     {items.position}
                   </Text>
                   <Link href={items.refLink} target="_blank">
@@ -51,7 +57,7 @@ function Experience() {
                 <Text fontStyle={"italic"} fontSize="xl">
                   {items.startingDate} - {items.endingDate}
                 </Text>
-              </HStack>
+              </Stack>
               <UnorderedList color={ulcolor}>
                 {items.description.map((itemmslist, key) => {
                   return <ListItem key={key}>{itemmslist}</ListItem>;

@@ -19,13 +19,7 @@ function Projects() {
   return (
     <Box minHeight={"70vh"} mt="20" mb="10">
       <AttentionSeeker effect="bounce">
-        <Heading
-          as={"h1"}
-          size="2xl"
-          textAlign={"center"}
-          m={"8"}
-          color="white"
-        >
+        <Heading as={"h1"} size="2xl" textAlign={"center"} m={"8"}>
           projects 🚀
         </Heading>
       </AttentionSeeker>
@@ -43,7 +37,8 @@ function Projects() {
                   "rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px"
                 }
                 p={6}
-                m={6}
+                mx={[0, 6]}
+                my={[4, 6]}
                 overflow={"hidden"}
               >
                 <Stack direction={"row"} justifyContent="space-between" mb="2">
