@@ -7,9 +7,12 @@ import {
   Text,
   UnorderedList,
   useColorModeValue,
+  IconButton,
+  Link,
 } from "@chakra-ui/react";
 import { experienceData } from "@/data/experienceData";
 import { Fade } from "react-awesome-reveal";
+import { BsArrowUpRight } from "react-icons/bs";
 
 function Experience() {
   const ulcolor = useColorModeValue("blackAlpha.800", "whiteAlpha.800");
@@ -28,9 +31,23 @@ function Experience() {
           return (
             <Box mb="8" key={key}>
               <HStack justify={"space-between"} fontSize="2xl" mb="2">
-                <Text>
-                  {items.company}, <i>{items.position}</i>
-                </Text>
+                <HStack>
+                  <Text fontWeight={"bold"} fontSize="2xl">
+                    {items.company},
+                  </Text>
+                  <Text fontStyle={"italic"} fontSize="xl">
+                    {items.position}
+                  </Text>
+                  <Link href={items.refLink}>
+                    <IconButton
+                      aria-label="reference"
+                      size={"sm"}
+                      variant="outline"
+                      colorScheme={"yellow"}
+                      icon={<BsArrowUpRight />}
+                    />
+                  </Link>
+                </HStack>
                 <Text fontStyle={"italic"} fontSize="xl">
                   {items.startingDate} - {items.endingDate}
                 </Text>

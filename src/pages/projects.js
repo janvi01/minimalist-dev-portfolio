@@ -1,5 +1,4 @@
 import { projectsData } from "@/data/projectsData";
-import styles from "../styles/Home.module.css";
 import {
   Stack,
   Text,
@@ -17,7 +16,7 @@ function Projects() {
   const cardcolor = useColorModeValue("white", "gray.900");
   const namecolor = useColorModeValue("gray.700", "white");
   return (
-    <Box minHeight={"70vh"}>
+    <Box minHeight={"70vh"} mt="20" mb="10">
       <AttentionSeeker effect="bounce">
         <Heading
           as={"h1"}
