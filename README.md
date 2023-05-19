@@ -1,6 +1,6 @@
 # Janvi Portfolio 🚀
 
-Template taken from [here]()
+Template taken from [here](https://github.com/janvi01/minimalist-next-portfolio)
 
 ### readme loading soon...
 
