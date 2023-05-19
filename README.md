@@ -1,6 +1,6 @@
-# Minimalist Developer Portfolio 🚀
+# Janvi Portfolio 🚀
 
-## A lightweight, customizable and open-sourced minimalist developer personal portfolio built with Next.js.
+Template taken from [here]()
 
 ### readme loading soon...
 
