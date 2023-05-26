@@ -20,11 +20,15 @@ function Projects() {
     <Box minHeight={"70vh"} mt="20" mb="10">
       <AttentionSeeker effect="bounce">
         <Heading as={"h1"} size="2xl" textAlign={"center"} m={"8"}>
-          projects 🚀
+          a look at my projects 🚀
         </Heading>
       </AttentionSeeker>
       <Fade delay={1e3} cascade damping={1e-1}>
-        <Flex direction={["column", "row"]} wrap="wrap">
+        <Flex
+          direction={["column", "row"]}
+          wrap="wrap"
+          justifyContent={"center"}
+        >
           {projectsData.map((items, key) => {
             return (
               <Box

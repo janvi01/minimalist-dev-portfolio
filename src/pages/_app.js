@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
       <VStack>
-        <Box p={["4", "8", "16"]} minH={"100vh"} w={["100%", "90%", "70%"]}>
+        <Box p={["4", "8", "16"]} minH={"100vh"} w={["100%", "90%", "75%"]}>
           <Navbar />
           <Component {...pageProps} />
           <Footer />
