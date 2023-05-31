@@ -9,6 +9,6 @@ export const navData = [
   },
   {
     navItem: "blog",
-    url: "https://janvi01.hashnode.dev/",
+    url: "/blog",
   },
 ];
