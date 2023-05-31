@@ -1,10 +1,10 @@
-import { Box, useColorModeValue, Heading } from "@chakra-ui/react";
+import { Box, useColorModeValue, Heading, Image } from "@chakra-ui/react";
 
 const BlogPostCard = ({ post }) => {
   const cardcolor = useColorModeValue("white", "gray.900");
   return (
     <Box
-      maxW={"450px"}
+      maxW={"420px"}
       bg={cardcolor}
       rounded={"md"}
       boxShadow={
@@ -14,7 +14,7 @@ const BlogPostCard = ({ post }) => {
       my={[4, 6]}
       overflow={"hidden"}
     >
-      <img src={post.coverImage} alt={post.title} />
+      <Image src={post.coverImage} alt={post.title} />
       <Heading fontSize={"xl"} fontFamily={"body"} p={6}>
         {post.title}
       </Heading>

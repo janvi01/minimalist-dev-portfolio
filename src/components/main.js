@@ -5,6 +5,7 @@ import {
   VStack,
   useColorModeValue,
   Image,
+  Flex,
 } from "@chakra-ui/react";
 import { AttentionSeeker } from "react-awesome-reveal";
 import NextImage from "next/image";
@@ -18,7 +19,7 @@ function Main() {
       pb="6"
       justify="flex-start"
       spacing="8"
-      textAlign={"center"}
+      textAlign={["center", "left"]}
       color={useColorModeValue("black", "white")}
     >
       <Image
@@ -30,7 +31,7 @@ function Main() {
         ml={["30%", "0"]}
         alt="displaypicture"
       ></Image>
-      <VStack>
+      <Flex direction={"column"}>
         <AttentionSeeker effect="pulse">
           <Heading as={"h1"} size="3xl" lineHeight={"shorter"}>
             {greetings.title}
@@ -39,7 +40,7 @@ function Main() {
             {greetings.subtitle}
           </Heading>
         </AttentionSeeker>
-      </VStack>
+      </Flex>
       <AttentionSeeker effect="tada" delay={1000} duration={3000}>
         <Heading as={"h1"} size="4xl" mt={["0", "5"]}>
           👋🏻
