@@ -19,8 +19,8 @@ function Projects() {
   return (
     <Box minHeight={"70vh"} mt="20" mb="10">
       <AttentionSeeker effect="bounce">
-        <Heading as={"h1"} size={["xl", "2xl"]} textAlign={"center"} mb={8}>
-          a look at my projects 🚀
+        <Heading as={"h1"} size={"xl"} textAlign={"center"} mb={8}>
+          take a look at my projects 🚀
         </Heading>
       </AttentionSeeker>
       <Fade delay={1e3} cascade damping={1e-1}>
