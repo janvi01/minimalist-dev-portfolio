@@ -15,7 +15,6 @@ import NextLink from "next/link";
 
 function Projects() {
   const cardcolor = useColorModeValue("white", "gray.900");
-  const namecolor = useColorModeValue("gray.700", "white");
   return (
     <Box minHeight={"70vh"} mt="20" mb="10">
       <AttentionSeeker effect="bounce">
@@ -46,11 +45,7 @@ function Projects() {
                 overflow={"hidden"}
               >
                 <Stack direction={"row"} justifyContent="space-between" mb="2">
-                  <Heading
-                    color={namecolor}
-                    fontSize={"2xl"}
-                    fontFamily={"body"}
-                  >
+                  <Heading fontSize={"2xl"} fontFamily={"body"}>
                     {items.projectname}
                   </Heading>
                   <HStack>

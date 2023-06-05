@@ -1,11 +1,8 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import Main from "@/components/main";
 import { Box } from "@chakra-ui/react";
 import About from "@/components/about";
 import Experience from "@/components/experience";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (

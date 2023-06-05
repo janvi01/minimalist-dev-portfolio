@@ -33,12 +33,10 @@ function Main() {
       ></Image>
       <Flex direction={"column"}>
         <AttentionSeeker effect="pulse">
-          <Heading as={"h1"} size="3xl" lineHeight={"shorter"}>
+          <Heading size="3xl" lineHeight={"shorter"}>
             {greetings.title}
           </Heading>
-          <Heading as={"h6"} size="md">
-            {greetings.subtitle}
-          </Heading>
+          <Heading size="md">{greetings.subtitle}</Heading>
         </AttentionSeeker>
       </Flex>
       <AttentionSeeker effect="tada" delay={1000} duration={3000}>
