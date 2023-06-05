@@ -33,6 +33,7 @@ function Navbar() {
             key={key}
             _hover={{
               color: "white",
+              transform: "scale(1.2)",
             }}
           >
             {items.navItem}
