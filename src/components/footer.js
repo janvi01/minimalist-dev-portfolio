@@ -21,7 +21,9 @@ function Footer() {
               key={key}
               _hover={{
                 color: hovercolor,
+                transform: "translateY(-4px)",
               }}
+              cursor={"pointer"}
             >
               <Link
                 href={items.url}
