@@ -1,14 +1,7 @@
 import { greetings } from "@/data/homeData";
-import {
-  Heading,
-  Stack,
-  VStack,
-  useColorModeValue,
-  Image,
-  Flex,
-} from "@chakra-ui/react";
+import { Heading, Stack, useColorModeValue, Flex } from "@chakra-ui/react";
 import { AttentionSeeker } from "react-awesome-reveal";
-import NextImage from "next/image";
+import Image from "next/image";
 import dp from "../assets/dp.png";
 
 function Main() {
@@ -22,15 +15,14 @@ function Main() {
       textAlign={["center", "left"]}
       color={useColorModeValue("black", "white")}
     >
-      <Image
-        as={NextImage}
-        src={dp}
-        borderRadius="50%"
-        width={28}
-        height={32}
-        ml={["30%", "0"]}
-        alt="displaypicture"
-      ></Image>
+      <Flex justifyContent={"center"}>
+        <Image
+          src={dp}
+          width={110}
+          style={{ borderRadius: "50%" }}
+          alt="displaypicture"
+        ></Image>
+      </Flex>
       <Flex direction={"column"}>
         <AttentionSeeker effect="pulse">
           <Heading size="3xl" lineHeight={"shorter"}>
