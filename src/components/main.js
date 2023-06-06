@@ -19,6 +19,7 @@ function Main() {
         <Image
           src={dp}
           width={110}
+          height={130}
           style={{ borderRadius: "50%" }}
           alt="displaypicture"
         ></Image>
