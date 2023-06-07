@@ -22,6 +22,10 @@ Go to `src/data` folder and replace the data with your personal information, tha
 
 ⚡️ Support Dark and Light mode 🌙
 
+## Current Lighthouse Performance ⚡
+
+![Lighthouse](src/assets/Performance.png)
+
 ### To view the demo: [Click Here](https://minimalist-dev-portfolio.vercel.app/)
 
 ## Getting Started 🚀

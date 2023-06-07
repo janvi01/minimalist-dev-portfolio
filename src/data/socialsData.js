@@ -9,17 +9,17 @@ export const socialsData = [
   },
   {
     social: "twitter",
-    url: "",
+    url: "/",
     icon: BsTwitter,
   },
   {
     social: "linkedin",
-    url: "",
+    url: "/",
     icon: BsLinkedin,
   },
   {
     social: "github",
-    url: "",
+    url: "/",
     icon: BsGithub,
   },
 ];
