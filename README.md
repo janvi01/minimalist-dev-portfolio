@@ -22,7 +22,7 @@ Go to `src/data` folder and replace the data with your personal information, tha
 
 ⚡️ Support Dark and Light mode 🌙
 
-### To view the demo: [Click Here](https://janvi01-portfolio.netlify.app/)
+### To view the demo: [Click Here](https://minimalist-dev-portfolio.vercel.app/)
 
 ## Getting Started 🚀
 
