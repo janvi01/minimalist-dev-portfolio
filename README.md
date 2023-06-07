@@ -2,13 +2,31 @@
 
 ### A lightweight, customizable and open-sourced minimalist developer personal portfolio built with Next.js.
 
-## Features
+[add video presentation]
 
-.. add features
+### Go to `src/data` folder and replace the data with your personal information, that's it. As simple as that.
 
-## Tech stack used 🛠️
+## Features ✨
+
+⚡️ Built using Next.js + Styled with Chakra UI 💫
+
+⚡️ Minimalist UI Design + Reveal Animations 🌟
+
+⚡️ Multi Page 💎
+
+⚡️ Fully Responsive 🚀
+
+⚡️ Fast and Optimized for SEO ⚡
+
+⚡️ Support Dark and Light mode 🌙
+
+### To view the demo: [Click Here](https://janvi01-portfolio.netlify.app/)
 
 ## Getting Started 🚀
+
+The instructions provided here will get you a copy of this template that you can run live on the localhost and do changes and testing according to your need in the development server.
+
+For **Hosting**,
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
