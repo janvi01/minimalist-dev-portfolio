@@ -16,7 +16,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 //GraphQL query
 const query = `
     {
-      user(username: "janvi01") {
+      user(username: "hashnode") {
         publication {
           posts{
             slug

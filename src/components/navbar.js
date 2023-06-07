@@ -1,5 +1,5 @@
-import { navData } from "@/data/navData";
-import { Button, Heading, HStack, Link, Spacer } from "@chakra-ui/react";
+import { navData, navEmoji } from "@/data/navData";
+import { Heading, HStack, Link, Spacer } from "@chakra-ui/react";
 import { IconButton, useColorMode, useColorModeValue } from "@chakra-ui/react";
 import { BsSun, BsMoon } from "react-icons/bs";
 
@@ -22,8 +22,8 @@ function Navbar() {
       }
       borderRadius={"25px"}
     >
-      <Link href="\" display={["none", "block"]}>
-        <Heading>👩‍💻</Heading>
+      <Link href={navEmoji.url} display={["none", "block"]}>
+        <Heading>{navEmoji.emoji}</Heading>
       </Link>
       <Spacer />
       {navData.map((items, key) => {

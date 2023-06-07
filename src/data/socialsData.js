@@ -4,22 +4,22 @@ import { MdEmail } from "react-icons/md";
 export const socialsData = [
   {
     social: "email",
-    url: "mailto:janvibajo1@gmail.com",
+    url: "https://gmail.com",
     icon: MdEmail,
   },
   {
     social: "twitter",
-    url: "https://twitter.com/janvibajo01",
+    url: "",
     icon: BsTwitter,
   },
   {
     social: "linkedin",
-    url: "https://www.linkedin.com/in/janvi01/",
+    url: "",
     icon: BsLinkedin,
   },
   {
     social: "github",
-    url: "https://github.com/janvi01",
+    url: "",
     icon: BsGithub,
   },
 ];

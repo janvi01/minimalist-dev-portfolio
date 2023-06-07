@@ -1,13 +1,13 @@
 const greetings = {
-  title: "hi there, I am Janvi 🌻",
-  subtitle: "a passionate frontend developer and an open sourcerer ⭐",
+  title: "hi there, I am Bruno 🌻",
+  subtitle: "a software developer, UI/UX Designer ⭐",
 };
 
 const about = {
   about_para_1:
-    "I am a software developer with a focus on front-end engineering and problem solving. I possess a strong ability to communicate and ability to express ideas clearly and concisely.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
   about_para_2:
-    "I specialized in Frontend-development, Technical Writing, and Creative Design. I am an Open-source enthusiast with experience of participating in various open-source programs like Outreachy, GSSoC, Hacktoberfest, etc. and contributing to well-known Free Open Source Software.",
+    "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 };
 
 export { greetings, about };

@@ -1,4 +1,9 @@
-export const navData = [
+const navEmoji = {
+  emoji: "🧑‍💻",
+  url: "/",
+};
+
+const navData = [
   {
     navItem: "home",
     url: "/",
@@ -8,7 +13,13 @@ export const navData = [
     url: "/projects",
   },
   {
+    navItem: "resume",
+    url: "/",
+  },
+  {
     navItem: "blog",
-    url: "/blog",
+    url: "/",
   },
 ];
+
+export { navEmoji, navData };

@@ -1,23 +1,24 @@
 export const experienceData = [
   {
-    company: "Mozilla",
-    position: "Core Contributor",
-    startingDate: "Feb 2022",
+    company: "Google",
+    position: "Software Engineer",
+    startingDate: "January 2020",
     endingDate: "present",
     description: [
-      "Merged 20+ patches to Mozilla source code working on the products - Firefox browser i.e. Picture-in-Picture, adds on, documentation etc. that is live in Firefox, Firefox Beta, and Nightly Browser used by 100+ million users.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillums",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillums",
     ],
-    refLink: "https://phabricator.services.mozilla.com/p/janvibajo1/",
+    refLink: "",
   },
   {
-    company: "Mozilla",
-    position: "Software Engineer Intern",
-    startingDate: "May 2022",
-    endingDate: "Sept 2022",
+    company: "Codelabs",
+    position: "Android developer",
+    startingDate: "March 2019",
+    endingDate: "January 2020",
     description: [
-      "Selected as one of the outreachy interns from a pool of 3500+ applicants worldwide working on the project Firefox Picture-in-Picture Improvements.",
-      "Added new controls, subtitle support for various sites like Hotstar, SonyLiv etc., wrote unit tests and fix misc bugs to Picture-in-Picture.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillums",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit in voluptate velit esse cillums",
     ],
-    refLink: "https://bugzilla.mozilla.org/show_bug.cgi?id=1778801",
+    refLink: "",
   },
 ];
