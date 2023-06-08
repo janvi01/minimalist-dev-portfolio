@@ -148,3 +148,9 @@ const navData = [
 #### Experience Section
 
 ...
+
+### Footer
+
+...
+
+### Projects Page
