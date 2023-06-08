@@ -88,12 +88,63 @@ If your run into issues installing the dependencies with NPM, use this below com
 $ sudo npm install --unsafe-perm=true --allow-root
 ```
 
-Once your server has started, go to this url `http://localhost:3000/` to see the portfolio locally.
+Once your server has started, go to the localhost portal `http://localhost:3000/` to see the portfolio live locally.
 
-<br>
-
----
-
-<br>
+<br/>
 
 ## Template Instructions:
+
+Go to `src/data` folder and change the data in the respective `json` file.
+
+### Navbar
+
+Go to `src/data/navData.js` and fill your information.
+
+There are two parts: navEmoji - set the emoji whatever you want and it redirects you to home page.
+
+navData - route links to different pages.
+
+- for resume, add the drive link url in in place of url `/`.
+- for blog, if you write on hashnode, add your hashnode username in `pages/blog.js` in line number 19 to map your articles and `/blog` in place of url below. If you write on any other platform, simply add the url of your blog page.
+
+> Note : You can remove the items by removing the nested items.
+
+```
+const navEmoji = {
+  emoji: "🧑‍💻",
+  url: "/",
+};
+
+const navData = [
+  {
+    navItem: "home",
+    url: "/",
+  },
+  {
+    navItem: "projects",
+    url: "/projects",
+  },
+  {
+    navItem: "resume",
+    url: "/",
+  },
+  {
+    navItem: "blog",
+    url: "/",
+  },
+];
+```
+
+### Home Page
+
+#### Hero Section
+
+...
+
+#### About Section
+
+...
+
+#### Experience Section
+
+...
