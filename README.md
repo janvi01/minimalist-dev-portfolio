@@ -105,7 +105,7 @@ There are two parts: navEmoji - set the emoji whatever you want and it redirects
 navData - route links to different pages.
 
 - for resume, add the drive link url in in place of url `/`.
-- for blog, if you write on hashnode, add your hashnode username in `pages/blog.js` in line number 19 to map your articles and `/blog` in place of url below. If you write on any other platform, simply add the url of your blog page.
+- for blog, if you write on hashnode, add your hashnode username in `pages/blog.js` in line number 19 to map your hashnode articles and `/blog` in place of url below. If you write on any other platform, simply add the url of your blog page in in place of url `/`.
 
 > Note : You can remove the items by removing the nested items.
 
@@ -139,15 +139,28 @@ const navData = [
 
 #### Hero Section
 
-...
+Go to `src/data/homeData.js` and fill your personal information.
+
+Add your name in the `title` value of `greetings` object.
+Add a subtitle/short description about yourself (commonly known as tagline) in the `subtitle` value of `greetings` object.
 
 #### About Section
 
-...
+Go to `src/data/homeData.js` and fill your about information.
+
+Add two lines description about yourself in the `about` object. (You can add what your interest lies in, what tech stack you are skilled in).
 
 #### Experience Section
 
-...
+Go to `src/data/experienceData.js` and fill your experience information.
+
+Add your experience positions in the `experienceData` just like it is shown on LinkedIn profile.
+
+Add `company`, `position`, `startingDate`, `endingDate`, `description` (about your role), and `refLink` (reference Link of the position).
+
+In case you are unsure about any of the values, simply remove it or add a blank "" string.
+
+You can add as much experience as you want by just expanding the object array.
 
 ### Footer
 
