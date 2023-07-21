@@ -164,6 +164,41 @@ You can add as much experience as you want by just expanding the object array.
 
 ### Footer
 
-...
+Go to `src/data/socialsData.js` and fill your socials url information.
+
+Add your profile link of different platform in place of `url` like LinkedIn, Twitter, GitHub etc.
+
+```
+export const socialsData = [
+  {
+    social: "email",
+    url: "/",
+    icon: MdEmail,
+  },
+  {
+    social: "twitter",
+    url: "/",
+    icon: BsTwitter,
+  },
+  {
+    social: "linkedin",
+    url: "/",
+    icon: BsLinkedin,
+  },
+  {
+    social: "github",
+    url: "/",
+    icon: BsGithub,
+  },
+];
+```
 
 ### Projects Page
+
+Go to `src/data/projectsData.js` and add your projects data.
+
+To showcase one's skills, projects are a great way to do it.
+
+To add projects, create an array of object inside `projectsData`. For a particular project, add `projectname`, `description`, `techstack`, `githuburl` and `liveurl`.
+
+> Note: In case you are unsure about any of the values, simply remove it or add a blank "" string.
